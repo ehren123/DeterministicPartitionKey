@@ -3,7 +3,7 @@ const crypto = require("crypto");
 const TRIVIAL_PARTITION_KEY = "0";
 const MAX_PARTITION_KEY_LENGTH = 256;
 
-exports.deterministicPartitionKey = (event) => {
+function deterministicPartitionKey(event) {
   // If the event object is falsy, use the trivial partition key.
   if(!event) {
     return TRIVIAL_PARTITION_KEY;
@@ -32,3 +32,5 @@ exports.deterministicPartitionKey = (event) => {
 
   return candidate
 };
+
+module.exports = { deterministicPartitionKey };

@@ -9,3 +9,12 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+After writing the unit tests, I used them to ensure my refactor passed.
+
+I moved the constants TRIVIAL_PARTITION_KEY and MAX_PARTITION_KEY_LENGTH outside of the function. This is clearer and more standard.
+
+I performed the falsy check at the start of the function. This reduces the need for nesting if statements.
+
+I added comments to make it easier to understand the code.
+
