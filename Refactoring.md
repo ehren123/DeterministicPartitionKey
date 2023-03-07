@@ -18,3 +18,7 @@ I performed the falsy check at the start of the function. This reduces the need 
 
 I added comments to make it easier to understand the code.
 
+I used a fuction and module.exports as in my opinion this is clearer.
+
+I standardised strings to use single quotes.
+
